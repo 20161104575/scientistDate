@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D723EE732170A19F005EF4A7 /* timg.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D723EE722170A19F005EF4A7 /* timg.jpeg */; };
 		D73525CC215B2D84003F329F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73525CB215B2D84003F329F /* AppDelegate.swift */; };
 		D73525CE215B2D84003F329F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73525CD215B2D84003F329F /* ViewController.swift */; };
 		D73525D1215B2D84003F329F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D73525CF215B2D84003F329F /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D723EE722170A19F005EF4A7 /* timg.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = timg.jpeg; path = ../../../../Downloads/timg.jpeg; sourceTree = "<group>"; };
 		D73525C8215B2D84003F329F /* scientistDate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = scientistDate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D73525CB215B2D84003F329F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D73525CD215B2D84003F329F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 			children = (
 				D73525CB215B2D84003F329F /* AppDelegate.swift */,
 				D73525CD215B2D84003F329F /* ViewController.swift */,
+				D723EE722170A19F005EF4A7 /* timg.jpeg */,
 				D73525CF215B2D84003F329F /* Main.storyboard */,
 				D73525D2215B2D89003F329F /* Assets.xcassets */,
 				D73525D4215B2D89003F329F /* LaunchScreen.storyboard */,
@@ -231,6 +234,7 @@
 			files = (
 				D73525D6215B2D89003F329F /* LaunchScreen.storyboard in Resources */,
 				D73525D3215B2D89003F329F /* Assets.xcassets in Resources */,
+				D723EE732170A19F005EF4A7 /* timg.jpeg in Resources */,
 				D73525D1215B2D84003F329F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
