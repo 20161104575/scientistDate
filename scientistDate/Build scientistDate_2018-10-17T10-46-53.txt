@@ -1,0 +1,14 @@
+
+Showing Recent Errors Only
+
+Prepare build
+note: Using new build systemnote: Planning buildnote: Using build description from memory
+
+Build system information
+warning: Capabilities for scientistDate may not function correctly because its entitlements use a placeholder team ID. To resolve this, select a development team in the build settings editor. (in target 'scientistDate')
+
+Build target scientistDate of project scientistDate with configuration Debug
+
+
+
+Build succeeded    2018/10/17 上午10:46    2.6 seconds
