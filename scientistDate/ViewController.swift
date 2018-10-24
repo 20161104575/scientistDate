@@ -31,6 +31,70 @@ class ViewController: UIViewController {
             text_2.text = text_2.text! + "2"
         }
     }
+    
+    @IBAction func three(_ sender: Any) {
+        if re == 1{
+            text_2.text = "3"
+        }else{
+            text_2.text = text_2.text! + "3"
+        }
+    }
+    
+    @IBAction func four(_ sender: Any) {
+        if re == 1{
+            text_2.text = "4"
+        }else{
+            text_2.text = text_2.text! + "4"
+        }
+    }
+    
+    @IBAction func five(_ sender: Any) {
+        if re == 1{
+            text_2.text = "5"
+        }else{
+            text_2.text = text_2.text! + "5"
+        }
+    }
+
+    @IBAction func six(_ sender: Any) {
+        if re == 1{
+            text_2.text = "6"
+        }else{
+            text_2.text = text_2.text! + "6"
+        }
+    }
+    
+    @IBAction func seven(_ sender: Any) {
+        if re == 1{
+            text_2.text = "7"
+        }else{
+            text_2.text = text_2.text! + "7"
+        }
+    }
+    
+    @IBAction func eight(_ sender: Any) {
+        if re == 1{
+            text_2.text = "8"
+        }else{
+            text_2.text = text_2.text! + "8"
+        }
+    }
+    
+    @IBAction func nine(_ sender: Any) {
+        if re == 1{
+            text_2.text = "9"
+        }else{
+            text_2.text = text_2.text! + "9"
+        }
+    }
+    
+    @IBAction func zero(_ sender: Any) {
+        if re == 1{
+            text_2.text = "0"
+        }else{
+            text_2.text = text_2.text! + "0"
+        }
+    }
     var add = 0
     var number = 0
     @IBAction func add(_ sender: Any) {
@@ -163,8 +227,8 @@ class ViewController: UIViewController {
         text_1.text = ""
         text_2.text = ""
     }
+
     override func viewDidLoad() {
-        
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
