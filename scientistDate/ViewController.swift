@@ -99,6 +99,7 @@ class ViewController: UIViewController {
     var number = 0
     @IBAction func add(_ sender: Any) {
         if add == 1{
+            text_2.text = "+"
             let a = Double(text_1.text!)!
             let b = Double(text_2.text!)!
             let c = a + b
