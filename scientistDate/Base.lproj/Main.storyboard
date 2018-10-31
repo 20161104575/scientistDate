@@ -240,6 +240,15 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ubh-mw-hZV">
+                                <rect key="frame" x="46" y="182" width="294" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="textColor" red="0.53287887573242188" green="0.95543950796127319" blue="0.88306134939193726" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.38651400804519653" green="0.72711890935897827" blue="0.69157761335372925" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="0.53287887573242188" green="0.95543950796127319" blue="0.88306134939193726" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -249,13 +258,14 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="text" destination="Ubh-mw-hZV" id="uru-Ha-VIT"/>
                         <outlet property="text_1" destination="oB3-4s-6Lb" id="hRU-Mr-R24"/>
                         <outlet property="text_2" destination="XNT-PP-GEk" id="HZ2-si-TfB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-823" y="-604"/>
+            <point key="canvasLocation" x="-612" y="-749"/>
         </scene>
     </scenes>
 </document>

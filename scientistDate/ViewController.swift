@@ -19,101 +19,100 @@ class ViewController: UIViewController {
     var re = 0
     @IBAction func one(_ sender: Any) {
         if re == 1{
-            text_2.text = "1"
+            text.text = "1"
         }else{
-            text_2.text = text_2.text! + "1"
+            text.text = text.text! + "1"
         }
     }
     @IBAction func two(_ sender: Any) {
         if re == 1{
-            text_2.text = "2"
+            text.text = "2"
         }else{
-            text_2.text = text_2.text! + "2"
+            text.text = text.text! + "2"
         }
     }
     
     @IBAction func three(_ sender: Any) {
         if re == 1{
-            text_2.text = "3"
+            text.text = "3"
         }else{
-            text_2.text = text_2.text! + "3"
+            text.text = text.text! + "3"
         }
     }
     
     @IBAction func four(_ sender: Any) {
         if re == 1{
-            text_2.text = "4"
+            text.text = "4"
         }else{
-            text_2.text = text_2.text! + "4"
+            text.text = text.text! + "4"
         }
     }
     
     @IBAction func five(_ sender: Any) {
         if re == 1{
-            text_2.text = "5"
+            text.text = "5"
         }else{
-            text_2.text = text_2.text! + "5"
+            text.text = text.text! + "5"
         }
     }
 
     @IBAction func six(_ sender: Any) {
         if re == 1{
-            text_2.text = "6"
+            text.text = "6"
         }else{
-            text_2.text = text_2.text! + "6"
+            text.text = text.text! + "6"
         }
     }
     
     @IBAction func seven(_ sender: Any) {
         if re == 1{
-            text_2.text = "7"
+            text.text = "7"
         }else{
-            text_2.text = text_2.text! + "7"
+            text.text = text.text! + "7"
         }
     }
     
     @IBAction func eight(_ sender: Any) {
         if re == 1{
-            text_2.text = "8"
+            text.text = "8"
         }else{
-            text_2.text = text_2.text! + "8"
+            text.text = text.text! + "8"
         }
     }
     
     @IBAction func nine(_ sender: Any) {
         if re == 1{
-            text_2.text = "9"
+            text.text = "9"
         }else{
-            text_2.text = text_2.text! + "9"
+            text.text = text.text! + "9"
         }
     }
     
     @IBAction func zero(_ sender: Any) {
         if re == 1{
-            text_2.text = "0"
+            text.text = "0"
         }else{
-            text_2.text = text_2.text! + "0"
+            text.text = text.text! + "0"
         }
     }
     var add = 0
     var number = 0
     @IBAction func add(_ sender: Any) {
         if add == 1{
-            text_2.text = "+"
             let a = Double(text_1.text!)!
-            let b = Double(text_2.text!)!
+            let b = Double(text.text!)!
             let c = a + b
             text_1.text = String(c)
-            text_2.text = ""
+            text.text = ""
             number = 1
             re = 1
         }else{
-            if text_2.text == ""{
-                text_2.text = "0"
+            if text.text == ""{
+                text.text = "0"
             }else {
-                let x = Double(text_2.text!)!
+                let x = Double(text.text!)!
                 text_1.text = String(x)
-                text_2.text = ""
+                text.text = ""
                 number = 1
                 re = 0
             }
@@ -122,19 +121,19 @@ class ViewController: UIViewController {
     @IBAction func minus(_ sender: Any) {
         if add == 1{
             let a = Double(text_1.text!)!
-            let b = Double(text_2.text!)!
+            let b = Double(text.text!)!
             let c = a - b
             text_1.text = String(c)
-            text_2.text = ""
+            text.text = ""
             number = 2
             re = 1
         }else{
-            if text_2.text == ""{
-                text_2.text = "0"
+            if text.text == ""{
+                text.text = "0"
             }else {
-                let x = Double(text_2.text!)!
+                let x = Double(text.text!)!
                 text_1.text = String(x)
-                text_2.text = ""
+                text.text = ""
                 number = 2
                 re = 0
             }
@@ -144,19 +143,19 @@ class ViewController: UIViewController {
     @IBAction func multiply(_ sender: Any) {
         if add == 1{
             let a = Double(text_1.text!)!
-            let b = Double(text_2.text!)!
+            let b = Double(text.text!)!
             let c = a * b
             text_1.text = String(c)
-            text_2.text = ""
+            text.text = ""
             number = 3
             re = 1
         }else{
-            if text_2.text == ""{
-                text_2.text = "0"
+            if text.text == ""{
+                text.text = "0"
             }else {
-                let x = Double(text_2.text!)!
+                let x = Double(text.text!)!
                 text_1.text = String(x)
-                text_2.text = ""
+                text.text = ""
                 number = 3
                 re = 0
             }
@@ -166,30 +165,34 @@ class ViewController: UIViewController {
     @IBAction func divide(_ sender: Any) {
         if add == 1{
             let a = Double(text_1.text!)!
-            let b = Double(text_2.text!)!
+            let b = Double(text.text!)!
             let c = a / b
+            if b == 0
+            {
+                text.text = "不能除以0"
+            }
             text_1.text = String(c)
-            text_2.text = ""
+            text.text = ""
             number = 4
             re = 1
         }else{
-            if text_2.text == ""{
-                text_2.text = "0"
+            if text.text == ""{
+                text.text = "0"
             }else {
-                let x = Double(text_2.text!)!
+                let x = Double(text.text!)!
                 text_1.text = String(x)
-                text_2.text = ""
+                text.text = ""
                 number = 4
                 re = 0
             }
         }
     }
-    
+    var judge = 0
     @IBAction func equal(_ sender: Any) {
         var d: Double
         var c: Double
         let x = Double(text_1.text!)!
-        c = (text_2.text! as NSString).doubleValue
+        c = (text.text! as NSString).doubleValue
         if number == 1{
             d = x + c
         }else if number == 2{
@@ -197,35 +200,35 @@ class ViewController: UIViewController {
         }else if number == 3{
             d = x * c
         }else if number == 4{
-            d = x / (c)
+            d = x / c
         }
         else {
             d = 1000
         }
         text_2.text = String(c)
         if judge == 1{
-            text_2.text = String(format:"%f", d)
+            text.text = String(format:"%f", d)
         }else {
-            text_2.text = String(format:"%.0f", d)
+            text.text = String(format:"%.9f", d)
         }
         re = 1
         judge = 0
         add = 0
     }
     
-    var judge = 0
     @IBAction func dot(_ sender: Any) {
-        text_2.text = text_2.text! + "."
+        text.text = text.text! + "."
         judge = 1
     }
     
     @IBAction func dc(_ sender: Any) {
-        if text_2.text != "" || !(text_2.text?.isEmpty)!{
-            text_2.text?.remove(at: (text_2.text?.index(before: (text_2.text?.endIndex)!))!)
+        if text.text != "" || !(text.text?.isEmpty)!{
+            text.text?.remove(at: (text.text?.index(before: (text.text?.endIndex)!))!)
         }
     }
     @IBAction func clear(_ sender: Any) {
         text_1.text = ""
+        text.text = ""
         text_2.text = ""
     }
 
