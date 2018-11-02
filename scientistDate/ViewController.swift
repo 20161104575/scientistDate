@@ -89,7 +89,10 @@ class ViewController: UIViewController {
     }
     
     @IBAction func zero(_ sender: Any) {
-        if re == 1{
+        if number == 4{
+            text.text = "不能除以"
+        }
+        else if re == 1{
             text.text = "0"
         }else{
             text.text = text.text! + "0"
@@ -167,10 +170,6 @@ class ViewController: UIViewController {
             let a = Double(text_1.text!)!
             let b = Double(text.text!)!
             let c = a / b
-            if b == 0
-            {
-                text.text = "不能除以0"
-            }
             text_1.text = String(c)
             text.text = ""
             number = 4
@@ -218,7 +217,7 @@ class ViewController: UIViewController {
     
     @IBAction func dot(_ sender: Any) {
         text.text = text.text! + "."
-        judge = 1
+        judge = 0
     }
     
     @IBAction func dc(_ sender: Any) {
