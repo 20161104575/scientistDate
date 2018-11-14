@@ -16,6 +16,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var text_2: UITextField!
     
     @IBOutlet weak var text: UILabel!
+    var number = 0
+    var judge = 0
+    var add = 0
     var re = 0
     @IBAction func one(_ sender: Any) {
         if re == 1{
@@ -98,8 +101,6 @@ class ViewController: UIViewController {
             text.text = text.text! + "0"
         }
     }
-    var add = 0
-    var number = 0
     @IBAction func add(_ sender: Any) {
         if add == 1{
             let a = Double(text_1.text!)!
@@ -186,7 +187,7 @@ class ViewController: UIViewController {
             }
         }
     }
-    var judge = 0
+
     @IBAction func equal(_ sender: Any) {
         var d: Double
         var c: Double
@@ -199,7 +200,7 @@ class ViewController: UIViewController {
         }else if number == 3{
             d = x * c
         }else if number == 4{
-            d = x / c
+            d = x / (c)
         }
         else {
             d = 1000
@@ -217,7 +218,7 @@ class ViewController: UIViewController {
     
     @IBAction func dot(_ sender: Any) {
         text.text = text.text! + "."
-        judge = 0
+        judge = 1
     }
     
     @IBAction func dc(_ sender: Any) {
@@ -229,6 +230,7 @@ class ViewController: UIViewController {
         text_1.text = ""
         text.text = ""
         text_2.text = ""
+        re = 0
     }
 
     override func viewDidLoad() {
