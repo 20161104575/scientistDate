@@ -93,7 +93,7 @@ class ViewController: UIViewController {
     
     @IBAction func zero(_ sender: Any) {
         if number == 4{
-            text.text = "不能除以"
+            text.text = "不能除以0"
         }
         else if re == 1{
             text.text = "0"
